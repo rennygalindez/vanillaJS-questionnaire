@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3fb;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionnaire-item {
+  min-height: 40vh;
+  min-width: 30%;
+  border: solid 2px black;
+  box-shadow: 0 0 1rem 0.5px #bcbcc6;
+  background-color: #fff;
+  border-radius: 2%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.questionnaire-item:hover {
+  box-shadow: 0 0 1rem 1px #bcbcc6;
+}
+
+.questionnaire-item-text {
+  min-height: 80%;
+  padding: 2rem;
+}
+
+.questionnaire-item-text-question {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.questionnaire-item-text p {
+  text-align: center;
+}
+.questionnaire-item-text-options {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+.questionnaire-item-text-options input {
+  margin: 1rem;
+}
+
+.questionnaire-item-button {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background-color: blue;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.questionnaire-item-button:hover {
+  background-color: aqua;
+}
